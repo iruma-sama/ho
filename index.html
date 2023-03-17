@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,16 +13,23 @@
 <body>
     <header id="header">
         <h1>Progate<span>[</span>X<span>]</span></h1>
-        <nav>
+        <nav class="de hide">
             <a href="#about">About</a>
             <a href="#service">Service</a>
             <a href="#contact">Contact</a>
         </nav>
+        <div class="menu">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
+    <main>
     <section id="landing">
         <div class="landing-title">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint explicabo mollitia deleniti ut nulla molestias quo eum nesciunt facere.</p>
+            <h1>Jasa pembuatan aplikasi dikerjakan oleh developer profesional.</h1>
+            <p>Konsultasikan kepada kami aplikasi yang ingin anda buat, kami akan memberikan solusi yang sesuai dengan perkembangan teknologi saat ini.</p>
             <div>
                 <a class="btn btn-alt" href="">More Info</a>
                 <a class="btn" href="#contact">Contact Us</a>
@@ -38,8 +44,8 @@
             <img src="ProgateX/images/about.png" alt="About Image">
         </div>
         <div>
-            <h1>We are the best in our field</h1>
-            <p>For the last 5 years we always give the best to our client and we will always be the best</p>
+            <h1>Kami adalah solusi terbaik bagi anda.</h1>
+            <p>Selama 5 tahun kami selalu memberikan yang terbaik bagi setiap client kami.</p>
             <div class="about-stats">
                 <div class="about-stats-item">
                     <h1>100+</h1>
@@ -62,8 +68,8 @@
     <section id="service">
         <div class="service-header">
             <div>
-                <h1>Our Servicee</h1>
-                <p>We have the best service to solve your problem</p>
+                <h1>Our Service</h1>
+                <p>Kami memiliki pelayaan terbaik untuk solusi masalah anda </p>
             </div>
             <a href="" class="btn">Contact Us</a>
         </div>
@@ -81,16 +87,16 @@
             <div class="service-detail-item">
                 <img src="ProgateX/images/service3.png" alt="service 4 image">
                 <h2>Mobile Application</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, optio quod quasi aperiam at ratione.</p>
+                <p>Bangun aplikasi mobile perusahaan anda, agar mudah untuk diakses dimana saja dan kapan saja.</p>
             </div>
         </div>
     </section>
     <section id="contact">
         <h1>Contact Us</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, tempore!</p>
+        <p>Jangan ragu menghubungi untuk menyelesaikan masalah anda!</p>
         <div class="contact-detail">
             <form action="">
-                <h1>Tell us your problem</h1>
+                <h1>Ceritakan aplikasi yang ingin anda buat</h1>
                 <div class="form-group">
                     <div id="input-name" class="input-group">
                         <label for="">Name</label>
@@ -122,7 +128,7 @@
         </div>
     </section>
     <footer id="footer">
-        <div>
+        <div class="footer-desc">
             <h1>Progate[X]</h1>
             <p>Ariobimo Sentral, Jakarta Selatan, RT.9/RW.4, Kuningan Timur, Setiabudi, Jakarta 12950</p>
         </div>
@@ -132,5 +138,14 @@
             <img src="ProgateX/images/Twitter.svg" alt="">
         </div>
     </footer>
+
+    <script>
+        const menu = document.querySelector('.menu input');
+        const nav = document.querySelector('nav');
+        
+        menu.addEventListener('click', function () {
+            nav.classList.toggle('hide');
+        });
+    </script>
 </body>
 </html>
